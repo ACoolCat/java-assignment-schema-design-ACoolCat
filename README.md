@@ -26,5 +26,8 @@ Create a database schema that will represent People, their Location, and their I
 4. Write a SQL query that will find all Person entries that share a specified Interest and have the same specified Location (The Interest & Location can be hard coded during testing, this will be parameterized later).
 
 
-SELECT * FROM person JOIN interest ON person.interest_id = interest.id
-SELECT * FROM person JOIN location_table ON person.location_id = location_table.id
+SELECT First_Name as FN FROM person as PER 
+JOIN interest ON PER.interest_id = interest.id
+JOIN location_table ON PER.location_id = location_table.id
+WHERE PER.interest_id = 1
+WHERE PER.location_id = 1
