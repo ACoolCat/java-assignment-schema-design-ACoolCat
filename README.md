@@ -24,3 +24,7 @@ Create a database schema that will represent People, their Location, and their I
   - A Person can have any number of interests
   - A Person must have one location
 4. Write a SQL query that will find all Person entries that share a specified Interest and have the same specified Location (The Interest & Location can be hard coded during testing, this will be parameterized later).
+
+
+SELECT * FROM person JOIN interest ON person.interest_id = interest.id
+SELECT * FROM person JOIN location_table ON person.location_id = location_table.id
