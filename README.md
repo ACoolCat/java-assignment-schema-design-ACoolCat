@@ -29,5 +29,5 @@ Create a database schema that will represent People, their Location, and their I
 SELECT First_Name as FN FROM person as PER 
 JOIN interest ON PER.interest_id = interest.id
 JOIN location_table ON PER.location_id = location_table.id
-WHERE PER.interest_id = 1
-WHERE PER.location_id = 1
+WHERE PER.interest_id = 1 AND PER.location_id = 1
+
